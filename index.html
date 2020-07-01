@@ -99,14 +99,14 @@
       }
 
       function getMessages() {
-        $.get("http://localhost:3000/messages", (data) => {
+        $.get("/messages", (data) => {
           data.forEach(addMessages);
         });
       }
       getMessages();
 
       function sendMessage(message) {
-        $.post("http://localhost:3000/messages", message);
+        $.post("/messages", message);
       }
     </script>
   </body>
