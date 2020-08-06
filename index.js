@@ -53,6 +53,6 @@ mongoose.connect(dbUrl, {
     console.log('Database is setup and running')
 })
 
-const server = http.listen(80, () => {
+const server = http.listen(443, () => {
     console.log('Server is running on port', server.address().port);
 });
